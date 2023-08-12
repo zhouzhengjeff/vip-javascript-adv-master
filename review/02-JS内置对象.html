@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+
+        // var regexp = /^[a-z]{3}$/;
+
+        // i：区分大小写 ignore（忽略）
+        // g：全局匹配
+        // m：多行匹配
+        /*var regexp1 = new RegExp("^[a-z]{3}$","ig");
+        if (regexp1.test("ABC")) {
+            console.log('okay');
+        } else {
+            console.log("no okay");
+        }*/
+
+
+        /*var regexp = /^[a-z]{3}$/;
+        var s = "abcd";
+
+        //exec()将检索字符串string，从中得到与正则表达式regexp相匹配的文本。如果exec()找到了匹配的文本，它就会返回一个结果数组
+        var datas = regexp.exec(s);
+        datas.forEach((item) => {
+            console.log(item);
+        })*/
+
+        var s = "abcdebcfg";
+        // let str = s.replace("bc", "java");
+        // let str = s.replaceAll("bc", "java");
+
+        // ????
+        let str = s.replaceAll(/[a-z]{3}/ig, "java");
+        console.log(str);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

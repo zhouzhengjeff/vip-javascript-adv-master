@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+
+    </script>
+</head>
+<body>
+<div>
+    <input type="button" id="openWindow" value="打开新窗体">
+    <input type="text" id="info" name="info">
+</div>
+
+<script>
+    document.getElementById("openWindow").onclick = function () {
+        // "_blank"：打开一个全新的空白窗体
+        window.open("09-child.html", "_blank", "width=200,height=200", false);
+
+        window.showModalDialog()
+    };
+
+    function fun(value) {
+        document.getElementById("info").value = value;
+    }
+</script>
+</body>
+</html>

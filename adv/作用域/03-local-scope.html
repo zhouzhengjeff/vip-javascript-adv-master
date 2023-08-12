@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var i = 200;
+        function fun() {
+            // 局部作用域，当函数调用完毕后，函数占用的内存就会释放掉，意味着该局部变量回收
+            var i = 100;
+            console.log(i);
+        }
+
+        fun();
+
+        console.log(i);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

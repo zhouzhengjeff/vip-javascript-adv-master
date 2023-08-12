@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+
+        window.onload = function () {
+            let outerDivObj = document.getElementById("outerDiv");
+
+            // 获取所有的孩子节点
+            let outerDivChildNodeList = outerDivObj.childNodes;
+
+                let
+            divArray = [];
+
+            for (let i = 0; i < outerDivChildNodeList.length; i++) {
+                const childNode = outerDivChildNodeList[i];
+
+                // 判断节点类型是否是元素节点
+                if (childNode.nodeType === Node.ELEMENT_NODE) {
+
+                    // 判断节点名称是否为DIV节点
+                    if (childNode.nodeName === 'DIV') {
+                        divArray.push(childNode);
+                    }
+                }
+            }
+
+            divArray.forEach(item => console.log(item.innerText));
+        };
+
+    </script>
+</head>
+<body>
+<div id="outerDiv">
+    <div id="innerDiv1">IBM</div>
+    <div id="innerDiv2">SUN</div>
+    <div id="innerDiv3">Oracle</div>
+</div>
+</body>
+</html>

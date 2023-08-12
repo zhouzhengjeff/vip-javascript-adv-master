@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+
+        window.onload = function () {
+            let outerDivObj = document.getElementById("outerDiv");
+
+            // TODO 向外部div中插入三个内部div
+            let divElement1 = document.createElement("div");
+
+            /*let attr = document.createAttribute("id");
+            attr.nodeValue = "ssfdsfdsfdfdsf";
+            divElement1.setAttributeNode(attr)*/
+
+            divElement1.setAttribute("id", "innerDiv1");
+            divElement1.innerText = "IBM";
+
+            let divElement2 = document.createElement("div");
+            divElement2.setAttribute("id", "innerDiv2");
+            divElement2.innerText = "SUN";
+
+            let divElement3 = document.createElement("div");
+            divElement3.setAttribute("id", "innerDiv3");
+            divElement3.innerText = "Oracle";
+
+            // 设置父子关系
+            outerDivObj.appendChild(divElement1);
+            outerDivObj.appendChild(divElement2);
+            outerDivObj.appendChild(divElement3);
+        };
+
+    </script>
+</head>
+<body>
+<div id="outerDiv">
+
+</div>
+</body>
+</html>

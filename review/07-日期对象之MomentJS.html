@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../js/moment.js"></script>
+
+
+    <script>
+        // let result = moment().format("MMMM Do YYYY, h:mm:ss a");
+        // console.log(result);
+
+        var s = "1234-12-12";
+
+        // date并不是Date对象，而是Moment对象
+        // 使用构造函数创建Moment对象
+        let date = moment(s, "YYYY-MM-DD");
+        let day = date.format("dddd");
+        let year = date.format("YYYY");
+        let month = date.format("MM");
+
+        console.log(day, year, month);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        window.onload = function () {
+            let backBtnObj = document.querySelector("#backBtn");
+            backBtnObj.onclick = function () {
+                // 将历史记录进入上一个记录（返回操作）
+                window.history.back();
+                // window.history.forward();
+            };
+        };
+    </script>
+</head>
+<body>
+<button id="backBtn">返回</button>
+</body>
+</html>

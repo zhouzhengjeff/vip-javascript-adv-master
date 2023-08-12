@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        // 强烈建议不要这样写代码
+        // var fun = new Function("i", "j", "console.log(i+j)");
+        // fun(10, 20);
+
+        // Javascript中没有函数的重载的概念
+        function fun() {
+            console.log("helloworld");
+        }
+
+        function fun(i, j) {
+            // 实际传递参数的个数
+            console.log(arguments.length);
+            console.log(i + j);
+        }
+
+        // fun(100,200,300);
+
+        // 期望传递参数的个数
+        // console.log(fun.length);// 2
+
+
+        // call() apply() 调用函数
+        // 将window对象上的fun()调用了，而且传了两个参数（100,200）
+        // Method#invoke
+        // 第二个参数是可变参数
+        // fun.call(window, 100, 200);
+
+        // 第二个参数是数组类型
+        fun.apply(window, [100, 200]);
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

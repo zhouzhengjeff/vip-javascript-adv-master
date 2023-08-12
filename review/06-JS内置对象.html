@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        // 真正开发中建议使用封装对象（Moment.js）
+        /*var date = new Date();
+        console.log(date.getFullYear(), date.getMonth() + 1, date.getDate(), date.getHours(), date.getMinutes(), date.getSeconds());*/
+
+        //
+        var s = "1234-12-12";
+        // 将字符串解析成毫秒数
+        var date = Date.parse(s);
+
+        // setTime()
+        let currentDate = new Date();
+        currentDate.setTime(date);
+
+
+        console.log(currentDate.getFullYear(), currentDate.getMonth() + 1, currentDate.getDate(), currentDate.getHours(), currentDate.getMinutes(), currentDate.getSeconds())
+    </script>
+</head>
+<body>
+
+</body>
+</html>

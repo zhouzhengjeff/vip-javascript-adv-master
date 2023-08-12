@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+
+        window.onload = function () {
+            document.getElementById("addBtn").onclick = function () {
+                // TODO 选中左边的选项
+                let leftNameSelectListObj = document.getElementById("leftNameSelectList");
+                let rightNameSelectListObj = document.getElementById("rightNameSelectList");
+
+                let leftNameSelectOptions = leftNameSelectListObj.options;
+                for (let i = 0; i < leftNameSelectOptions.length; i++) {
+                    const leftNameSelectOption = leftNameSelectOptions[i];
+                    if (leftNameSelectOption.selected) {
+                        rightNameSelectListObj.appendChild(leftNameSelectOption);
+                        i--;
+                    }
+                }
+            };
+        };
+
+    </script>
+</head>
+<body>
+<div id="leftDiv">
+    <select id="leftNameSelectList" multiple>
+        <option value="">请选择用户</option>
+        <option value="1">zhangsan</option>
+        <option value="2">lisi</option>
+        <option value="3">wangwu</option>
+        <option value="3">guanyu</option>
+        <option value="3">zhangfei</option>
+        <option value="3">liubei</option>
+    </select>
+</div>
+
+<button id="addBtn">添加</button>
+
+<div id="rightDiv">
+    <select id="rightNameSelectList" multiple>
+
+    </select>
+</div>
+</body>
+</html>

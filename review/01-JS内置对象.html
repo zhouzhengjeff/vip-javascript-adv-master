@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        /*var arrayDemo = ["zhangsan", "lisi", 123, new Date(), "wangwu"];
+
+        // slice()
+        // let newArray = arrayDemo.slice(2, 4);
+        /*for (const result of newArray) {
+            console.log(result);
+        }*/
+
+        /*let datas = arrayDemo.splice(2, 2, "Oracle", "SUN");
+
+        for (const data of datas) {
+            console.log(data);// 123,new Date()
+        }
+
+        for (const result of arrayDemo) {
+            console.log(result);//
+        }*/
+
+
+
+        // TODO sort()
+        var arrayDemo1 = new Array(12, 23, 11, 123, 45, 21);
+        // 需求：进行数字（number）升序排序
+        // sort() 没有指定排序规则，则按照字符串升序排序
+        // arrayDemo1.sort();
+
+        var compareFunction = function (i, j) {
+            // 0： i==j
+            // 负数 i < j
+            // 正数 i > j
+            return i - j;
+        };
+        arrayDemo1.sort(compareFunction);
+
+        /*arrayDemo1.forEach((item,index) => {
+            console.log(item,index);
+        })*/
+
+        let newArray = arrayDemo1.filter((item) => {
+            return item > 20;
+        });
+
+        newArray.forEach((item) => {
+            console.log(item);
+        })
+
+        /*for (const result of arrayDemo1) {
+            console.log(result);
+        }*/
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

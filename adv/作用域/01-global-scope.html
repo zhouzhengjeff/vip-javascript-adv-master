@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+        // i变量就是全局变量，而且此时var声明的变量相当于设置到了window对象的属性上
+        var i = 100;
+        function fun() {
+            console.log(i);
+        }
+
+        fun();
+
+        console.log(window.i);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

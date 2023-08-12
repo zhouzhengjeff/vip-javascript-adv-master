@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+
+        window.onload = function () {
+            let btnObj = document.getElementById("btn");
+
+            // 按钮对象绑定了一个单击事件，该事件是一个对象（event）
+            btnObj.onclick = function (event) {
+                // event.target：事件源
+                console.log(event.target === this);//true
+            };
+        };
+
+    </script>
+</head>
+<body>
+<button id="btn">添加</button>
+</body>
+</html>

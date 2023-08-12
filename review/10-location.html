@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+
+        window.onload = function () {
+            let forwardBtnObj = document.getElementById("forwardBtn");
+            forwardBtnObj.onclick = function () {
+                // window.location.href = "11-location-result.html";
+
+                // 将本窗体的location属性赋予值（改变地址栏）
+                window.self.location = "11-location-result.html";
+            };
+        };
+
+    </script>
+</head>
+<body>
+<button id="forwardBtn">跳转</button>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" name="info" id="info">
+<button id="closeBtn">关闭窗体</button>
+
+<script type="text/javascript">
+    var closeBtnObj = document.getElementById("closeBtn");
+    closeBtnObj.addEventListener("click", function (e) {
+        var info = document.getElementById("info").value;
+
+        // 将info值回传给父窗体
+        window.opener.fun(info);
+
+
+        // 关闭本窗体
+        window.close();
+    });
+</script>
+</body>
+</html>
