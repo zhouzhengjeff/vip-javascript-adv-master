@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        let arrayDemo = [12, 23, 34, 45, 56];
+
+        // newArray数组长度为5
+        /*let newArray = new Array();
+        for (let i = 0; i < arrayDemo.length; i++) {
+            const temp = arrayDemo[i];
+
+            // 5,6,7,8,9
+            newArray.push(temp);
+        }*/
+
+        // 数组解构
+        // let [a, b, c, d, e] = [12, 23, 34, 45, 56];
+        // console.log(a, b, c, d, e);
+
+        /*let [, , , d, e] = [12, 23, 34, 45, 56];
+        console.log(d, e);*/
+
+        /*let [d, e, ...temp] = [12, 23, 34, 45, 56];
+        console.log(d, e);
+        for (const number of temp) {
+            console.log(number);
+        }*/
+
+        let [d, e, [f, g, h]] = [12, 23, [34, 45, 56]];
+        console.log(d, e, f, g, h);
+
+
+
+        // 最佳方式
+       /* let newArray = [...arrayDemo];
+        for (const result of newArray) {
+            console.log(result);
+        }*/
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

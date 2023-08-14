@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        // 定义常量(全大写，多个单词用“_”)
+        const PI = 3.1415926;
+        const PERSON_GENDER = "MALE";
+
+        // 常量一旦定义后不允许修改该常量的指针指向
+        // PI = 100;
+        // console.log(PI)
+
+        const person = {
+            "id": 1000,
+            "name": "zhangsan"
+        }
+
+        /*person = {
+            "id": 1001,
+            "name": "lisi"
+        }*/
+
+        person.name = "lisi";
+
+        console.log(person)
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

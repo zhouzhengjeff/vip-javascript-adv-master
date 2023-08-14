@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+
+        function fun() {
+
+            let i = 10;
+
+            // 返回的是函数(匿名函数)
+            return function () {
+                console.log(i);// 10
+            };
+        }
+
+        let fn = fun();
+        fn();
+
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

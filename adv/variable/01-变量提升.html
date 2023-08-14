@@ -3,17 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script>
-
+    <script type="text/javascript">
         function fun() {
+            // 预解析
             // var i;
-            // 变量提升：将i变量的声明放到了该作用域的最前面
             console.log(i);// undefined
+            // i = 100;
             var i = 100;
         }
 
         fun();
-
     </script>
 </head>
 <body>
